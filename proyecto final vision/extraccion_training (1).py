@@ -20,7 +20,7 @@ resnet = InceptionResnetV1(pretrained='vggface2').eval()
 # Using webcam recognize face
 
 # loading data.pt file
-load_data = torch.load('Facenet_pythorch/data.pt') 
+load_data = torch.load('proyecto final vision\data.pt') 
 embedding_list = load_data[0] 
 name_list = load_data[1] 
 
@@ -34,7 +34,7 @@ cpu_array = []
 memory_array = []
 elapsed_time_array = []
 c = 0
-dataPath = 'D:/UNIVERSIDAD/Diseño_mecatronico2/Faces_Recognition_project/image_data'
+dataPath = 'proyecto final vision\personas.pt'
 personPath = dataPath + personName
 
 if not os.path.exists(personPath):
